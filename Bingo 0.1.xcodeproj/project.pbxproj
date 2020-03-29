@@ -13,6 +13,8 @@
 		781259C7242F979E00AF42AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 781259C5242F979E00AF42AD /* Main.storyboard */; };
 		781259C9242F97A100AF42AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 781259C8242F97A100AF42AD /* Assets.xcassets */; };
 		781259CC242F97A100AF42AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 781259CA242F97A100AF42AD /* LaunchScreen.storyboard */; };
+		78B68E30242FE62800576721 /* BingoBonger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B68E2F242FE62800576721 /* BingoBonger.swift */; };
+		78B68E322430B77E00576721 /* Bingo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B68E312430B77E00576721 /* Bingo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		781259C8242F97A100AF42AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		781259CB242F97A100AF42AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		781259CD242F97A100AF42AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78B68E2F242FE62800576721 /* BingoBonger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingoBonger.swift; sourceTree = "<group>"; };
+		78B68E312430B77E00576721 /* Bingo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bingo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,23 @@
 			children = (
 				781259BF242F979E00AF42AD /* AppDelegate.swift */,
 				781259C1242F979E00AF42AD /* SceneDelegate.swift */,
-				781259C3242F979E00AF42AD /* ViewController.swift */,
+				781259D3242FA42600AF42AD /* Controller */,
 				781259C5242F979E00AF42AD /* Main.storyboard */,
 				781259C8242F97A100AF42AD /* Assets.xcassets */,
 				781259CA242F97A100AF42AD /* LaunchScreen.storyboard */,
 				781259CD242F97A100AF42AD /* Info.plist */,
 			);
 			path = "Bingo 0.1";
+			sourceTree = "<group>";
+		};
+		781259D3242FA42600AF42AD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				781259C3242F979E00AF42AD /* ViewController.swift */,
+				78B68E2F242FE62800576721 /* BingoBonger.swift */,
+				78B68E312430B77E00576721 /* Bingo.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78B68E30242FE62800576721 /* BingoBonger.swift in Sources */,
 				781259C4242F979E00AF42AD /* ViewController.swift in Sources */,
+				78B68E322430B77E00576721 /* Bingo.swift in Sources */,
 				781259C0242F979E00AF42AD /* AppDelegate.swift in Sources */,
 				781259C2242F979E00AF42AD /* SceneDelegate.swift in Sources */,
 			);
@@ -285,6 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9W8J2TLNVW;
 				INFOPLIST_FILE = "Bingo 0.1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9W8J2TLNVW;
 				INFOPLIST_FILE = "Bingo 0.1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

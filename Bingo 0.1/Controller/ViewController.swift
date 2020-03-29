@@ -16,5 +16,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func letsBingoPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "BingoBonger", sender: self)
+    }
 }
 
