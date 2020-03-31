@@ -232,13 +232,23 @@ class BingoBonger: UIViewController {
     @IBOutlet weak var o15: UIButton!
 
     
-    var selectedButtons = [String]()
+    var checkedButtons = [String]()
+    var rows = [String]()
     
     func checkBingo(buttonId: String){
-        selectedButtons.append(buttonId)
-        for id in selectedButtons {
-            //Gå gjennom alle registrerte og se om det finnes vannrette BINGO
-            print(id)
+        if !checkedButtons.contains(buttonId){
+            checkedButtons.append(buttonId)
+            print("Check Bingo")
+            
+            let rowNumber = String(buttonId.dropFirst())
+            rows.append(rowNumber)
+            
+            let count = rows.filter{$0 == rowNumber}.count
+            
+            if count == 5 {
+                print("BINGO on row \(rowNumber)")
+                self.performSegue(withIdentifier: "Bingo", sender: self)
+            }
         }
     }
     
@@ -249,10 +259,10 @@ class BingoBonger: UIViewController {
         else{
             sender.backgroundColor = UIColor.systemPink
             sender.setTitleColor(UIColor.white, for: .normal)
+            
+            let buttonId = sender.accessibilityIdentifier!
+            checkBingo(buttonId: buttonId)
         }
-        
-        let buttonId = sender.accessibilityIdentifier!
-        checkBingo(buttonId: buttonId)
     }
 
     //segueway
