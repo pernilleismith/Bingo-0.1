@@ -15,6 +15,7 @@
 		781259CC242F97A100AF42AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 781259CA242F97A100AF42AD /* LaunchScreen.storyboard */; };
 		78B68E30242FE62800576721 /* BingoBonger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B68E2F242FE62800576721 /* BingoBonger.swift */; };
 		78B68E322430B77E00576721 /* Bingo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B68E312430B77E00576721 /* Bingo.swift */; };
+		F812CCFE2433F06800C1C4B6 /* Random+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F812CCFD2433F06800C1C4B6 /* Random+Array.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		781259CD242F97A100AF42AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78B68E2F242FE62800576721 /* BingoBonger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingoBonger.swift; sourceTree = "<group>"; };
 		78B68E312430B77E00576721 /* Bingo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bingo.swift; sourceTree = "<group>"; };
+		F812CCFD2433F06800C1C4B6 /* Random+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Random+Array.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				781259C3242F979E00AF42AD /* ViewController.swift */,
 				78B68E2F242FE62800576721 /* BingoBonger.swift */,
 				78B68E312430B77E00576721 /* Bingo.swift */,
+				F812CCFD2433F06800C1C4B6 /* Random+Array.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				781259C4242F979E00AF42AD /* ViewController.swift in Sources */,
 				78B68E322430B77E00576721 /* Bingo.swift in Sources */,
 				781259C0242F979E00AF42AD /* AppDelegate.swift in Sources */,
+				F812CCFE2433F06800C1C4B6 /* Random+Array.swift in Sources */,
 				781259C2242F979E00AF42AD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

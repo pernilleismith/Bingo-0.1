@@ -10,105 +10,112 @@ import UIKit
 
 class BingoBonger: UIViewController {
     
-    let numberArrayB = ["1", "2", "3","4", "5", "6", "7", "8", "9", "10","11", "12", "13", "14", "15"]
+    var numberArrayB1 =  Array(1...15).map{"\($0)"}
+    var numberArrayB2 = Array(1...15).map{"\($0)"}
+    var numberArrayB3 = Array(1...15).map{"\($0)"}
     
-    let numberArrayI = ["16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"]
+    var numberArrayI1 = Array(16...30).map{"\($0)"}
+    var numberArrayI2 = Array(16...30).map{"\($0)"}
+    var numberArrayI3 = Array(16...30).map{"\($0)"}
     
-    let numberArrayN = ["31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45"]
+    var numberArrayN1 = Array(31...45).map{"\($0)"}
+    var numberArrayN2 = Array(31...45).map{"\($0)"}
+    var numberArrayN3 = Array(31...45).map{"\($0)"}
     
-    let numberArrayG = ["46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60"]
+    var numberArrayG1 = Array(46...60).map{"\($0)"}
+    var numberArrayG2 = Array(46...60).map{"\($0)"}
+    var numberArrayG3 = Array(46...60).map{"\($0)"}
     
-    let numberArrayO = ["61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75"]
-    
-  
-    
+    var numberArrayO1 = Array(62...75).map{"\($0)"}
+    var numberArrayO2 = Array(62...75).map{"\($0)"}
+    var numberArrayO3 = Array(62...75).map{"\($0)"}
     
     override func viewDidLoad() {
         
         // Random number generator B
-        b1.setTitle(numberArrayB.randomElement(), for: .normal)
-        b2.setTitle(numberArrayB.randomElement(), for: .normal)
-        b3.setTitle(numberArrayB.randomElement(), for: .normal)
-        b4.setTitle(numberArrayB.randomElement(), for: .normal)
-        b5.setTitle(numberArrayB.randomElement(), for: .normal)
-        b6.setTitle(numberArrayB.randomElement(), for: .normal)
-        b7.setTitle(numberArrayB.randomElement(), for: .normal)
-        b8.setTitle(numberArrayB.randomElement(), for: .normal)
-        b9.setTitle(numberArrayB.randomElement(), for: .normal)
-        b10.setTitle(numberArrayB.randomElement(), for: .normal)
-        b11.setTitle(numberArrayB.randomElement(), for: .normal)
-        b12.setTitle(numberArrayB.randomElement(), for: .normal)
-        b13.setTitle(numberArrayB.randomElement(), for: .normal)
-        b14.setTitle(numberArrayB.randomElement(), for: .normal)
-        b15.setTitle(numberArrayB.randomElement(), for: .normal)
+        b1.setTitle(numberArrayB1.randomItem(), for: .normal)
+        b2.setTitle(numberArrayB1.randomItem(), for: .normal)
+        b3.setTitle(numberArrayB1.randomItem(), for: .normal)
+        b4.setTitle(numberArrayB1.randomItem(), for: .normal)
+        b5.setTitle(numberArrayB1.randomItem(), for: .normal)
+        b6.setTitle(numberArrayB2.randomItem(), for: .normal)
+        b7.setTitle(numberArrayB2.randomItem(), for: .normal)
+        b8.setTitle(numberArrayB2.randomItem(), for: .normal)
+        b9.setTitle(numberArrayB2.randomItem(), for: .normal)
+        b10.setTitle(numberArrayB2.randomItem(), for: .normal)
+        b11.setTitle(numberArrayB3.randomItem(), for: .normal)
+        b12.setTitle(numberArrayB3.randomItem(), for: .normal)
+        b13.setTitle(numberArrayB3.randomItem(), for: .normal)
+        b14.setTitle(numberArrayB3.randomItem(), for: .normal)
+        b15.setTitle(numberArrayB3.randomItem(), for: .normal)
         
         // Random number generator I
-        i1.setTitle(numberArrayI.randomElement(), for: .normal)
-        i2.setTitle(numberArrayI.randomElement(), for: .normal)
-        i3.setTitle(numberArrayI.randomElement(), for: .normal)
-        i4.setTitle(numberArrayI.randomElement(), for: .normal)
-        i5.setTitle(numberArrayI.randomElement(), for: .normal)
-        i6.setTitle(numberArrayI.randomElement(), for: .normal)
-        i7.setTitle(numberArrayI.randomElement(), for: .normal)
-        i8.setTitle(numberArrayI.randomElement(), for: .normal)
-        i9.setTitle(numberArrayI.randomElement(), for: .normal)
-        i10.setTitle(numberArrayI.randomElement(), for: .normal)
-        i11.setTitle(numberArrayI.randomElement(), for: .normal)
-        i12.setTitle(numberArrayI.randomElement(), for: .normal)
-        i13.setTitle(numberArrayI.randomElement(), for: .normal)
-        i14.setTitle(numberArrayI.randomElement(), for: .normal)
-        i15.setTitle(numberArrayI.randomElement(), for: .normal)
+        i1.setTitle(numberArrayI1.randomItem(), for: .normal)
+        i2.setTitle(numberArrayI1.randomItem(), for: .normal)
+        i3.setTitle(numberArrayI1.randomItem(), for: .normal)
+        i4.setTitle(numberArrayI1.randomItem(), for: .normal)
+        i5.setTitle(numberArrayI1.randomItem(), for: .normal)
+        i6.setTitle(numberArrayI2.randomItem(), for: .normal)
+        i7.setTitle(numberArrayI2.randomItem(), for: .normal)
+        i8.setTitle(numberArrayI2.randomItem(), for: .normal)
+        i9.setTitle(numberArrayI2.randomItem(), for: .normal)
+        i10.setTitle(numberArrayI2.randomItem(), for: .normal)
+        i11.setTitle(numberArrayI3.randomItem(), for: .normal)
+        i12.setTitle(numberArrayI3.randomItem(), for: .normal)
+        i13.setTitle(numberArrayI3.randomItem(), for: .normal)
+        i14.setTitle(numberArrayI3.randomItem(), for: .normal)
+        i15.setTitle(numberArrayI3.randomItem(), for: .normal)
         
         // Random number generator N
-        n1.setTitle(numberArrayN.randomElement(), for: .normal)
-        n2.setTitle(numberArrayN.randomElement(), for: .normal)
-        n3.setTitle(numberArrayN.randomElement(), for: .normal)
-        n4.setTitle(numberArrayN.randomElement(), for: .normal)
-        n5.setTitle(numberArrayN.randomElement(), for: .normal)
-        n6.setTitle(numberArrayN.randomElement(), for: .normal)
-        n7.setTitle(numberArrayN.randomElement(), for: .normal)
-        n8.setTitle(numberArrayN.randomElement(), for: .normal)
-        n9.setTitle(numberArrayN.randomElement(), for: .normal)
-        n10.setTitle(numberArrayN.randomElement(), for: .normal)
-        n11.setTitle(numberArrayN.randomElement(), for: .normal)
-        n12.setTitle(numberArrayN.randomElement(), for: .normal)
-        n13.setTitle(numberArrayN.randomElement(), for: .normal)
-        n14.setTitle(numberArrayN.randomElement(), for: .normal)
-        n15.setTitle(numberArrayN.randomElement(), for: .normal)
+        n1.setTitle(numberArrayN1.randomItem(), for: .normal)
+        n2.setTitle(numberArrayN1.randomItem(), for: .normal)
+        n3.setTitle(numberArrayN1.randomItem(), for: .normal)
+        n4.setTitle(numberArrayN1.randomItem(), for: .normal)
+        n5.setTitle(numberArrayN1.randomItem(), for: .normal)
+        n6.setTitle(numberArrayN2.randomItem(), for: .normal)
+        n7.setTitle(numberArrayN2.randomItem(), for: .normal)
+        n8.setTitle(numberArrayN2.randomItem(), for: .normal)
+        n9.setTitle(numberArrayN2.randomItem(), for: .normal)
+        n10.setTitle(numberArrayN2.randomItem(), for: .normal)
+        n11.setTitle(numberArrayN3.randomItem(), for: .normal)
+        n12.setTitle(numberArrayN3.randomItem(), for: .normal)
+        n13.setTitle(numberArrayN3.randomItem(), for: .normal)
+        n14.setTitle(numberArrayN3.randomItem(), for: .normal)
+        n15.setTitle(numberArrayN3.randomItem(), for: .normal)
         
         // Random number generator G
-        g1.setTitle(numberArrayG.randomElement(), for: .normal)
-        g2.setTitle(numberArrayG.randomElement(), for: .normal)
-        g3.setTitle(numberArrayG.randomElement(), for: .normal)
-        g4.setTitle(numberArrayG.randomElement(), for: .normal)
-        g5.setTitle(numberArrayG.randomElement(), for: .normal)
-        g6.setTitle(numberArrayG.randomElement(), for: .normal)
-        g7.setTitle(numberArrayG.randomElement(), for: .normal)
-        g8.setTitle(numberArrayG.randomElement(), for: .normal)
-        g9.setTitle(numberArrayG.randomElement(), for: .normal)
-        g10.setTitle(numberArrayG.randomElement(), for: .normal)
-        g11.setTitle(numberArrayG.randomElement(), for: .normal)
-        g12.setTitle(numberArrayG.randomElement(), for: .normal)
-        g13.setTitle(numberArrayG.randomElement(), for: .normal)
-        g14.setTitle(numberArrayG.randomElement(), for: .normal)
-        g15.setTitle(numberArrayG.randomElement(), for: .normal)
+        g1.setTitle(numberArrayG1.randomItem(), for: .normal)
+        g2.setTitle(numberArrayG1.randomItem(), for: .normal)
+        g3.setTitle(numberArrayG1.randomItem(), for: .normal)
+        g4.setTitle(numberArrayG1.randomItem(), for: .normal)
+        g5.setTitle(numberArrayG1.randomItem(), for: .normal)
+        g6.setTitle(numberArrayG2.randomItem(), for: .normal)
+        g7.setTitle(numberArrayG2.randomItem(), for: .normal)
+        g8.setTitle(numberArrayG2.randomItem(), for: .normal)
+        g9.setTitle(numberArrayG2.randomItem(), for: .normal)
+        g10.setTitle(numberArrayG2.randomItem(), for: .normal)
+        g11.setTitle(numberArrayG3.randomItem(), for: .normal)
+        g12.setTitle(numberArrayG3.randomItem(), for: .normal)
+        g13.setTitle(numberArrayG3.randomItem(), for: .normal)
+        g14.setTitle(numberArrayG3.randomItem(), for: .normal)
+        g15.setTitle(numberArrayG3.randomItem(), for: .normal)
         
         // Random number generator O
-        o1.setTitle(numberArrayO.randomElement(), for: .normal)
-        o2.setTitle(numberArrayO.randomElement(), for: .normal)
-        o3.setTitle(numberArrayO.randomElement(), for: .normal)
-        o4.setTitle(numberArrayO.randomElement(), for: .normal)
-        o5.setTitle(numberArrayO.randomElement(), for: .normal)
-        o6.setTitle(numberArrayO.randomElement(), for: .normal)
-        o7.setTitle(numberArrayO.randomElement(), for: .normal)
-        o8.setTitle(numberArrayO.randomElement(), for: .normal)
-        o9.setTitle(numberArrayO.randomElement(), for: .normal)
-        o10.setTitle(numberArrayO.randomElement(), for: .normal)
-        o11.setTitle(numberArrayO.randomElement(), for: .normal)
-        o12.setTitle(numberArrayO.randomElement(), for: .normal)
-        o13.setTitle(numberArrayO.randomElement(), for: .normal)
-        o14.setTitle(numberArrayO.randomElement(), for: .normal)
-        o15.setTitle(numberArrayO.randomElement(), for: .normal)
+        o1.setTitle(numberArrayO1.randomItem(), for: .normal)
+        o2.setTitle(numberArrayO1.randomItem(), for: .normal)
+        o3.setTitle(numberArrayO1.randomItem(), for: .normal)
+        o4.setTitle(numberArrayO1.randomItem(), for: .normal)
+        o5.setTitle(numberArrayO1.randomItem(), for: .normal)
+        o6.setTitle(numberArrayO2.randomItem(), for: .normal)
+        o7.setTitle(numberArrayO2.randomItem(), for: .normal)
+        o8.setTitle(numberArrayO2.randomItem(), for: .normal)
+        o9.setTitle(numberArrayO2.randomItem(), for: .normal)
+        o10.setTitle(numberArrayO2.randomItem(), for: .normal)
+        o11.setTitle(numberArrayO3.randomItem(), for: .normal)
+        o12.setTitle(numberArrayO3.randomItem(), for: .normal)
+        o13.setTitle(numberArrayO3.randomItem(), for: .normal)
+        o14.setTitle(numberArrayO3.randomItem(), for: .normal)
+        o15.setTitle(numberArrayO3.randomItem(), for: .normal)
         
         super.viewDidLoad()
         // Do any additional setup after loading the view.
